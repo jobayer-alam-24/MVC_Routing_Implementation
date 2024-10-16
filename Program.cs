@@ -22,5 +22,12 @@ app.UseAuthorization();
 
 app.MapDefaultControllerRoute();
 
-
+app.MapControllerRoute(
+    name: "orders",
+    pattern: "{controller=Orders}/{action=Details}/{orderId:int?}"
+);
+app.MapControllerRoute(
+    name: "blog",
+    pattern: "{controller=Blog}/{action=Post}/{title}"
+);
 app.Run();

@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\JOBAYER\OneDrive\Tài liệu\MVC_Routing_Implementation
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/JOBAYER/OneDrive/Tài liệu/MVC_Routing_Implementation/Views/Blog/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/JOBAYER/OneDrive/Tài liệu/MVC_Routing_Implementation/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JOBAYER/OneDrive/Tài liệu/MVC_Routing_Implementation/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOBAYER/OneDrive/Tài liệu/MVC_Routing_Implementation/Views/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JOBAYER/OneDrive/Tài liệu/MVC_Routing_Implementation/Views/Shared/Error.cshtml]
