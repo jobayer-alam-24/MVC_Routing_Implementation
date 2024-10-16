@@ -8,19 +8,27 @@ using Microsoft.Extensions.Logging;
 
 namespace MVC_Routing_Implementation.Controllers
 {
-    public class Orders : Controller
+    public class ProductsController : Controller
     {
-        private readonly ILogger<Orders> _logger;
+        private readonly ILogger<ProductsController> _logger;
 
-        public Orders(ILogger<Orders> logger)
+        public ProductsController(ILogger<ProductsController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Details(int orderId = 101)
+        public IActionResult Index()
         {
-            ViewBag.ID = orderId;
             return View();
+        }
+        public IActionResult CreateProducts()
+        {
+            return View("~/Views/Products/Create.cshtml");
+        }
+        public IActionResult EditProducts(int id)
+        {
+            ViewBag.ID = id;
+            return View("~/Views/Products/Edit.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

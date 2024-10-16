@@ -8,17 +8,18 @@ using Microsoft.Extensions.Logging;
 
 namespace MVC_Routing_Implementation.Controllers
 {
-    public class Blog : Controller
+    public class OrdersController : Controller
     {
-        private readonly ILogger<Blog> _logger;
+        private readonly ILogger<OrdersController> _logger;
 
-        public Blog(ILogger<Blog> logger)
+        public OrdersController(ILogger<OrdersController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Post()
+        public IActionResult Details(int orderId = 101)
         {
+            ViewBag.ID = orderId;
             return View();
         }
 
