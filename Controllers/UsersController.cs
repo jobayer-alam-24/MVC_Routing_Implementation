@@ -30,6 +30,29 @@ namespace MVC_Routing_Implementation.Controllers
         {
             return View("~/Views/Users/Login.cshtml");
         }
+        //UserID works as Variable
+       [Route("Profile/{UserID=1}/{UserName}")]
+        public IActionResult GetUserProfile(int UserID, string UserName)
+        {
+            if(UserID == 1)
+            {
+            ViewBag.ID = UserID;
+            ViewBag.Name = UserName;
+            return View("~/Views/Users/Profile1.cshtml");
+            }
+            else if(UserID == 2)
+            {
+                ViewBag.ID = UserID;
+                ViewBag.Name = UserName;
+                return View("~/Views/Users/Profile2.cshtml");
+            }
+            else
+            {
+                ViewBag.ID = UserID;
+                ViewBag.Name = UserName;
+                return View("~/Views/Users/Profile1.cshtml");
+            }
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
